@@ -1,0 +1,184 @@
+<html>
+ <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+
+ <div class="container">
+    <header class="header">
+      <h1 id="title" class="text-center">SLIDE</h1>
+      <h3> Skate Shop</h3>
+      <p id="description" class="description text-center">
+        Thank you for skating with us!</p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-control"
+          placeholder="Enter your name"
+          required/>
+      </div>
+
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="form-control"
+          placeholder="Enter your Email"
+          required/>
+      </div>
+
+      <div class="form-group">
+        <label id="number-label" for="number"
+          >Age<span class="clue">(optional)</span></label>
+
+        <input
+          type="number"
+          name="age"
+          id="number"
+          min="10"
+          max="99"
+          class="form-control"
+          placeholder="Age"/>
+      </div>
+
+      <div class="form-group">
+        <p>Which are your skateboard style?</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Select your skate style</option>
+          <option value="Freestyle">Freestyle</option>
+          <option value="Vert">Vert</option>
+          <option value="Street">Street</option>
+          <option value="Park">Park</option>
+        </select>
+      </div>
+   
+      <div class="form-group">
+        <p>
+          What do you like us to improve?
+          <span class="clue">(Check all that apply)</span></p>
+  
+        <label>
+          <input
+            name="prefer"
+            value="Costumer service"
+            type="checkbox"
+            class="input-checkbox"
+          />Costumer service</label>
+
+        <label>
+          <input
+            name="prefer"
+            value="Online service"
+            type="checkbox"
+            class="input-checkbox"
+          />Online service</label>
+
+        <label>
+          <input
+            name="prefer"
+            value="Promotions"
+            type="checkbox"
+            class="input-checkbox"
+          />Promotions</label>
+          
+        <label>
+          <input
+            name="prefer"
+            value="Marketing"
+            type="checkbox"
+            class="input-checkbox"
+          />Marketing</label>
+
+          <label
+          ><input
+            name="prefer"
+            value="Interior design"
+            type="checkbox"
+            class="input-checkbox"
+          />Interior design</label>
+
+        <label
+          ><input
+            name="prefer"
+            value="Events"
+            type="checkbox"
+            class="input-checkbox"
+          />Events</label>
+
+      </div>
+        
+      <div class="form-group">
+        <p>Please rate our store.</p>
+
+        <label>
+          <input
+           name="user-recommend"
+           value="1 star"
+           type="radio"
+           class="input-radio"
+           checked
+         />&#9733 </label>
+     
+        <label>
+          <input
+           name="user-recommend"
+           value="2 stars"
+           type="radio"
+           class="input-radio"
+         />&#9733 &#9733 </label>
+     
+        <label>
+          <input
+           name="user-recommend"
+           value="3 stars"
+           type="radio"
+           class="input-radio"
+        />&#9733 &#9733 &#9733 </label>
+     
+     
+        <label>
+          <input
+           name="user-recommend"
+           value="4 stars"
+           type="radio"
+           class="input-radio"
+         />&#9733 &#9733 &#9733 &#9733 </label>
+     
+       <label>
+         <input
+           name="user-recommend"
+           value="5 stars"
+           type="radio"
+           class="input-radio"
+        />&#9733 &#9733 &#9733 &#9733 &#9733</label>
+
+      </div>
+  
+      <div class="form-group">
+        <p>Any comments or suggestions?</p>
+        <textarea
+          id="comments"
+          class="input-textarea"
+          name="comment"
+          placeholder="Enter your comment here..."
+        ></textarea>
+      </div>
+
+  
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+</html>

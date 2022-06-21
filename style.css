@@ -10,6 +10,10 @@
   *::after {
     box-sizing: border-box;
   }
+
+  .checked {
+    color: orange;
+  }
   
   body {
     font-family: 'Ubuntu', sans-serif;
@@ -31,7 +35,7 @@
     z-index: -1;
     background: var(--color-darkgray);
     background-image: linear-gradient(180deg, rgba(0, 0, 0, .9), rgba(128, 128, 128, 0.7)),
-    url(https://live.staticflickr.com/2532/4062075275_04f65508c9_k.jpg);
+      url(https://live.staticflickr.com/2532/4062075275_04f65508c9_k.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -161,6 +165,46 @@
     min-height: 1.25rem;
     min-width: 1.25rem;
   }
+
+  .stars input {
+    position: absolute;
+  }
+
+  .stars a {
+    display: inline-block;
+    padding-right:4px;
+    text-decoration: none;
+    margin-bottom: 20px;
+  }
+
+  .stars a:after {
+    position: relative;
+    font-size: 18px;
+    font-family: 'FontAwesome', serif;
+    display: block;
+    content: "\f005";
+    color: #e4e4e4;
+  }
+
+  span {
+    font-size: 0; /* trick to remove inline-element's margin */
+  }
+
+  .stars a:hover ~ a:after{
+    color: #e4e4e4 !important;
+  }
+  span.active a.active ~ a:after{
+    color: #e4e4e4;
+  }
+
+  span:hover a:after{
+    color:orange !important;
+  }
+
+  span.active a:after,
+  .stars a.active:after{
+    color:orange;
+  }
   
   .input-textarea {
     min-height: 80px;
@@ -178,3 +222,5 @@
     border-radius: 2px;
     cursor: pointer;
   }
+
+  

@@ -3,6 +3,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="style.css" rel="stylesheet"/>
  </head>
 
@@ -116,53 +118,17 @@
 
       </div>
         
-      <div class="form-group">
-        <p>Please rate our store.</p>
-
-        <label>
-          <input
-           name="user-recommend"
-           value="1 star"
-           type="radio"
-           class="input-radio"
-           checked
-         />&#9733 </label>
-     
-        <label>
-          <input
-           name="user-recommend"
-           value="2 stars"
-           type="radio"
-           class="input-radio"
-         />&#9733 &#9733 </label>
-     
-        <label>
-          <input
-           name="user-recommend"
-           value="3 stars"
-           type="radio"
-           class="input-radio"
-        />&#9733 &#9733 &#9733 </label>
-     
-     
-        <label>
-          <input
-           name="user-recommend"
-           value="4 stars"
-           type="radio"
-           class="input-radio"
-         />&#9733 &#9733 &#9733 &#9733 </label>
-     
-       <label>
-         <input
-           name="user-recommend"
-           value="5 stars"
-           type="radio"
-           class="input-radio"
-        />&#9733 &#9733 &#9733 &#9733 &#9733</label>
-
+      <div class="stars">
+        <p>Rate our store.</p>
+        <span>
+          <a class="star-1" href="#">1</a>
+          <a class="star-2" href="#">2</a>
+          <a class="star-3" href="#">3</a>
+          <a class="star-4" href="#">4</a>
+          <a class="star-5" href="#">5</a>
+        </span>        
       </div>
-  
+     
       <div class="form-group">
         <p>Any comments or suggestions?</p>
         <textarea
@@ -172,8 +138,7 @@
           placeholder="Enter your comment here..."
         ></textarea>
       </div>
-
-  
+       
       <div class="form-group">
         <button type="submit" id="submit" class="submit-button">
           Submit
@@ -181,4 +146,7 @@
       </div>
     </form>
   </div>
+
+  <script src="./script.js"></script>
+
 </html>
